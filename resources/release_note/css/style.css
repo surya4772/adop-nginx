@@ -3,19 +3,19 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 22-Dec-2015, 13:50:21
     Author     : silvana.donato
 */
-/* 
+/*
     Created on : 30-Dec-2015, 13:34:30
     Author     : silvana.donato
 */
-/* 
+/*
     Created on : 30-Dec-2015, 13:30:11
     Author     : silvana.donato
 */
-/* 
+/*
     Created on : 30-Dec-2015, 13:35:29
     Author     : silvana.donato
 */
@@ -72,52 +72,65 @@ a {
       max-width: 90%; }
 
 #header {
+
   position: relative;
-  height: 200px;
+  height: 120px;
   overflow: hidden;
-  background-color: #026002; }
+  background-color: #005696; }
   #header .header-cover {
     display: block;
-    position: relative;
+    background-color: #005696;
+    /*position: relative;*/
+    position: absolute;
+    padding-left: 7%;
+    padding-top:1%;
+    padding-right:2%;
+    color: #F5F5F5;
+    font-size:100px;
+    left: 0px;
+    right:0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(60, 118, 61, 0.2); }
+    /*background-color: rgba(60, 118, 61, 0.2);*/ }
     #header .header-cover .header-intro {
       position: absolute;
       left: 0px;
-      top: 0px;
-      width: 55%;
+      bottom:0px;
+      width: 65%;
       height: 100%;
-      padding: 2% 8% 2% 4%;
-      background-image: url("../img/cover2.png");
-      background-repeat: no-repeat;
-      background-position-x: right;
-      background-position-y: 0;
-      background-position: right 0; }
+      padding: 2% 6% 2% 4%;
+      /* background-image: url("../img/cover2.png"); */
+      /*background-image: url("../img/cover-lgi.png");*/
+      background-color: #005696;
+      background-repeat: repeat;
+      /*background-position: right 0; */
+      }
       #header .header-cover .header-intro .header-title {
         font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
         padding: 1% 0;
+        background-color: #005696;
         font-size: 4.4em;
         font-size: 7.2rem;
         font-weight: bold;
         color: white; }
       #header .header-cover .header-intro .header-button {
         padding: 13px;
-        background-color: #282928;
+        background-color: #005696;
         border-radius: 3px;
         display: block;
         width: 50%;
         text-align: center;
         text-decoration: none; }
         #header .header-cover .header-intro .header-button:hover {
-          background-color: #747674; }
+          background-color: #005696; }
     #header .header-cover .header-teasers {
       position: absolute;
       right: 0px;
-      top: 0px;
-      width: 45%;
+      top: 22%;
+      /* width: 45%; */
       height: 100%;
-      padding-left: 3%; }
+      /* padding-left: 3%; */
+      padding-right: 4%; }
       #header .header-cover .header-teasers .other-info {
         padding: 7% 2% 0;
         text-align: left;
@@ -228,7 +241,7 @@ MAIN CONTENT
 
 #blueprints {
   padding: 60px 0;
-  border-top: 3px solid #00a000; }
+  border-top: 3px solid #767975; }
   #blueprints .blueprint-separator {
     width: 100%;
     margin-top: 40px;
@@ -371,3 +384,46 @@ footer {
       padding-bottom: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.landing-page-content {
+      margin: 0 auto;
+      width: 90%;
+}
+
+/*.header-middle {
+    position: absolute;
+    left: 65%;
+    width: 155px;
+    height: 100%;
+    background-color: #005493;
+    /*background-image: url("../img/cover-lgi-right.png");*/
+
+}*/
+ .animated {
+    /*background-image: url("FT_logo.png");*/
+    background-color: #005493;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top:30px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+         
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); } 
+    100% { -webkit-transform: scale(1); }
+         }
+         
+         @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+         }
+         
+ .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;}
