@@ -42,7 +42,7 @@ main folder
                     "link": "/jenkins"                    ## this is the link (relative of absolute path) to the service         
                 }, 
                 {
-                    "id": "selenium",
+                    "id": "ldap-gerrit-shipyard-selenium",
                     "title": "selenium",
                     "img": "img/selenium.png",
                     "description": "web application automated tester",
